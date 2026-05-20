@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Øliv</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="mx-lg-6">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg border-bottom pb-3 fixed-top mx-6">
+        <div class="container-fluid d-flex justify-content-between">
+            <!-- Right Nav -->
+            <div class="nav-right d-flex align-items-center gap-2">
+                <a class="navbar-brand" href="#"><img src="./images/Logo.svg" alt="Logo"></a>
+                <div class="hire-badge p-1 px-2 fw-semibold rounded-4">
+                    <p>We are hiring!</p>
+                </div>
+            </div>
+
+            <!-- Left Nav -->
+            <div class="nav-left">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <!-- Collapsable Content (Only Visible on LG Screens) -->
+            <div class="collapse navbar-collapse gap-lg-5" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-3">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Pages
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item d-flex align-items-center">
+                        <a class="nav-link" href="#">Cart</a>
+                        <sup>
+                            <div
+                                class="cart-badge text-center d-flex align-items-center justify-content-center fw-semibold">
+                                <small>0</small>
+                            </div>
+                        </sup>
+                    </li>
+                </ul>
+                <button class="btn btn-outline-dark p-2 rounded-5">
+                    <p>Get in Touch</p>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <div class="hero-section d-flex flex-column justify-content-center mx-lg-0 mx-auto text-center text-lg-start vh-100">
+        <h1 class="hero-heading fw-normal text-body-emphasis" style="font-family: var(--font-dm);">Building Brands, One Success Story at a Time.</h1>
+        <div class="col-lg-6">
+            <p class="fs-3 my-3">Create a Brand That Resonates: We Can Help You Define and Communicate Your Unique
+                Message.</p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-center justify-content-lg-start">
+                <button type="button" class="hero-btn btn btn-dark rounded-5 btn-lg-lg px-4 py-3">Our Services </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Logo Marquee -->
+    <div class="logo-marquee overflow-hidden">
+        <div class="marquee-slider d-flex align-items-center">
+            <!-- 3 Duplicates for infinite scroll effect -->
+            <div class="logo-group">
+                <div class="logo-box">
+                    <img src="./images/Oliv-logo.svg" alt="">
+                </div>
+                <div class="logo-box">
+                    <img src="./images/Oliv-logo2.svg" alt="">
+                </div>
+                <div class="logo-box">
+                    <img src="./images/Oliv-logo3.svg" alt="">
+                </div>
+                <div class="logo-box">
+                    <img src="./images/Oliv-logo4.svg" alt="">
+                </div>
+                <div class="logo-box">
+                    <img src="./images/Oliv-logo5.svg" alt="">
+                </div>
+                <div class="logo-box">
+                    <img src="./images/Oliv-logo6.svg" alt="">
+                </div>
+            </div>
+            <div class="logo-group">
+                <div class="logo-box">
+                    <img src="./images/Oliv-logo.svg" alt="">
+                </div>
+                <div class="logo-box">
+                    <img src="./images/Oliv-logo2.svg" alt="">
+                </div>
+                <div class="logo-box">
+                    <img src="./images/Oliv-logo3.svg" alt="">
+                </div>
+                <div class="logo-box">
+                    <img src="./images/Oliv-logo4.svg" alt="">
+                </div>
+                <div class="logo-box">
+                    <img src="./images/Oliv-logo5.svg" alt="">
+                </div>
+                <div class="logo-box">
+                    <img src="./images/Oliv-logo6.svg" alt="">
+                </div>
+            </div>
+            <div class="logo-group">
+                <div class="logo-box">
+                    <img src="./images/Oliv-logo.svg" alt="">
+                </div>
+                <div class="logo-box">
+                    <img src="./images/Oliv-logo2.svg" alt="">
+                </div>
+                <div class="logo-box">
+                    <img src="./images/Oliv-logo3.svg" alt="">
+                </div>
+                <div class="logo-box">
+                    <img src="./images/Oliv-logo4.svg" alt="">
+                </div>
+                <div class="logo-box">
+                    <img src="./images/Oliv-logo5.svg" alt="">
+                </div>
+                <div class="logo-box">
+                    <img src="./images/Oliv-logo6.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services -->
+    <div class="services container-fluid my-6">
+        <div class="row g-1">
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card border-0 p-5">
+                    <h2>Brand Strategy</h2>
+                    <p>We help businesses define their unique brand message and branding positioning.</p>
+                    <a href="#">About Strategy</a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card border-0 p-5">
+                    <h2>Visual Identity</h2>
+                    <p>We create visual elements such as logos, packaging, and marketing materials for your brand.</p>
+                    <a href="#">About Identity</a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card border-0 p-5">
+                    <h2>Digital Marketing</h2>
+                    <p>We help businesses to promote their brand online and create engaging digital experiences.</p>
+                    <a href="#">About Marketing</a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card border-0 p-5">
+                    <h2>Brand Management</h2>
+                    <p>We help businesses to implement their brand across all touchpoints and ensure consistency.</p>
+                    <a href="#">About Management</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h1 class="fs-6 fw-light border-bottom pb-4">OUR WORK</h1>
+
+    <!-- Selected Work -->
+    <div class="selected-work my-6">
+        <div class="selected-head d-flex align-items-center justify-content-between">
+            <h1>Selected Work</h1>
+            <button class="btn btn-outline-dark rounded-5 py-2 px-4">All Work</button>
+        </div>
+
+        <div class="row g-5 mt-3">
+            <div class="col-lg-6 col-sm-12">
+                <div class="image-overlay img-fluid">
+                    <img src="./images/selected-img1.png" alt="">
+                </div>
+                <div class="img-description d-flex align-items-center justify-content-between mt-3">
+                    <h1>Invision Studio</h1>
+                    <button
+                        class="btn btn-outline-dark rounded-5 fw-semibold px-2 py-1"><small>Marketing</small></button>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-sm-12">
+                <div class="image-overlay img-fluid">
+                    <img src="./images/selected-img2.png" alt="">
+                </div>
+                <div class="img-description d-flex align-items-center justify-content-between mt-3">
+                    <h1>Square Media</h1>
+                    <button
+                        class="btn btn-outline-dark rounded-5 fw-semibold px-2 py-1"><small>Branding</small></button>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-sm-12">
+                <div class="image-overlay img-fluid">
+                    <img src="./images/selected-img3.png" alt="">
+                </div>
+                <div class="img-description d-flex align-items-center justify-content-between mt-3">
+                    <h1>Vision Design</h1>
+                    <button class="btn btn-outline-dark rounded-5 fw-semibold px-2 py-1"><small>Social
+                            Medial</small></button>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-sm-12">
+                <div class="image-overlay img-fluid">
+                    <img src="./images/selected-img4.png" alt="">
+                </div>
+                <div class="img-description d-flex align-items-center justify-content-between mt-3">
+                    <h1>Design Bros</h1>
+                    <button
+                        class="btn btn-outline-dark rounded-5 fw-semibold px-2 py-1"><small>Branding</small></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h1 class="fs-6 fw-light border-bottom pb-4">OUR VALUES</h1>
+
+    <!-- Our Values -->
+    <div class="our-values container-fluid my-6">
+        <div class="row g-4 mb-5">
+            <div class="col-lg-3">
+                <div class="card p-5 border-0" style="background-color: #f1f5f9;">
+                    <small class="mt-3">Services</small>
+                    <h2 class="my-6 mt-5">Our Approach to Branding.</h2>
+                    <button class="btn btn-outline-dark d-flex gap-4 rounded-5 px-4 py-3 fs-6 me-auto">
+                        About Øliv &nearr;</button>
+                </div>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="card p-5 border-0" style="background-color: #f1f6f5;">
+                    <div class="d-flex flex-column justify-content-between fw-semibold h-100">
+                        <p>HELPING BRANDS <br>STAND OUT</p>
+                        <h2 class="fs-4 fw-semibold">BOLD MOVES, <br>BIG IMPACT.</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="card p-5 border-0" style="background-color: #f8f8f8;">
+                    <div class="d-flex flex-column justify-content-between fw-semibold h-100">
+                        <small>HOW WE WORK <br>WITH OUR CLIENT</small>
+                        <h2 class="fs-4 fw-semibold">HONESTY IS THE <br>BEST POLICY.</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="card p-5 border-0"></div>
+            </div> <!-- Empty Div -->
+        </div>
+
+        <div class="row g-4">
+            <div class="col-lg-3">
+                <div class="card p-5 border-0"></div>
+            </div> <!-- Empty Div -->
+
+            <div class="col-lg-3">
+                <div class="card p-5 border-0" style="background-color: #f8f8f8;">
+                    <div class="d-flex flex-column justify-content-between fw-semibold h-100">
+                        <p>COLLABORATION IS KEY</p>
+                        <h2 class="fs-4 fw-semibold">BUILDING STRONG <br>PARTNERSHIPS.</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="card p-5 border-0" style="background-color: #f8ede3;">
+                    <div class="d-flex flex-column justify-content-between fw-semibold h-100">
+                        <p>OUR APPROACH</p>
+                        <h2 class="fs-4 fw-semibold">ACHIEVING <br>REAL RESULTS.</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="card p-5 border-0" style="background-color: #fffae7;">
+                    <div class="d-flex flex-column justify-content-between fw-semibold h-100">
+                        <p>OUR PHILOSOPHY</p>
+                        <h2 class="fs-4 fw-semibold">BUILDING TRUST, <br>NOT PITCHING.</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About/ Mission -->
+    <div class="mission d-flex flex-column align-items-start m-auto my-6 mb-5 w-50 text-start">
+        <h1>Crafting Exceptional Digital Experiences Across All Platforms: Our Goal at Øliv.</h1>
+        <div class="row mt-5">
+            <div class="col-lg-6">
+                <p>At Øliv, our goal is to craft exceptional digital experiences across all platforms. In today's
+                    digitally driven world, having a strong online presence is paramount for businesses to connect with
+                    their target audience effectively. We understand the importance of delivering seamless and engaging
+                    experiences that leave a lasting impression.</p>
+            </div>
+            <div class="col-lg-6">
+                <p>Our team of skilled designers, developers, and digital strategists collaborate to create customized
+                    digital solutions tailored to your unique business needs. Whether it's designing a user-friendly
+                    website, developing a mobile application, or enhancing your e-commerce platform, we strive to
+                    provide solutions that not only meet but exceed your expectations.</p>
+            </div>
+        </div>
+    </div>
+
+    <h1 class="fs-6 fw-light border-bottom pb-4 mt-5">OUR TEAM</h1>
+
+    <!-- Team -->
+    <div class="team my-6">
+        <div class="team-head d-flex align-items-center justify-content-between">
+            <h1>Our Team of Experts</h1>
+            <button class="btn btn-outline-dark rounded-5 py-2 px-4">About Us</button>
+        </div>
+
+        <div class="row g-5 mt-4">
+            <div class="col-lg-3 col-sm-6 p-5" style="background-color: #f1f6f5;">
+                <small>JOIN THE TEAM</small>
+                <h2 class="mt-5 mb-3" style="max-width: 250px;">Want to shape the future of branding?</h2>
+                <small class="text-muted fs-6 lh-1">Join us and shape the <br> future of branding today!</small>
+                <button class="btn btn-outline-dark d-flex gap-4 rounded-5 px-4 py-3 fs-6 me-auto mt-5">
+                    About Øliv &nearr;</button>
+            </div>
+
+            <div class="col-lg-3 col-sm-6">
+                <div class="image-overlay img-fluid position-relative overflow-hidden">
+                    <img src="./images/team1.png" alt="">
+                    <div class="social-icons">
+                        <a href="#"><i class="bi bi-instagram"><img src="./icons/Instagram.png" alt=""></i></a>
+                        <a href="#"><i class="bi bi-twitter"><img src="./icons/Twitter.png" alt=""></i></a>
+                        <a href="#"><i class="bi bi-behance"><img src="./icons/Behance.png" alt=""></i></a>
+                    </div>
+                </div>
+                <div class="img-description d-flex align-items-center justify-content-between my-4">
+                    <h1>Annette Black</h1>
+                    <button
+                        class="btn btn-outline-dark rounded-5 fw-semibold px-2 py-1"><small>Branding</small></button>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6">
+                <div class="image-overlay img-fluid position-relative overflow-hidden">
+                    <img src="./images/team2.png" alt="">
+                    <div class="social-icons">
+                        <a href="#"><i class="bi bi-instagram"><img src="./icons/Instagram.png" alt=""></i></a>
+                        <a href="#"><i class="bi bi-twitter"><img src="./icons/Twitter.png" alt=""></i></a>
+                        <a href="#"><i class="bi bi-behance"><img src="./icons/Behance.png" alt=""></i></a>
+                    </div>
+                </div>
+                <div class="img-description d-flex align-items-center justify-content-between my-4">
+                    <h1>Devon Lane</h1>
+                    <button
+                        class="btn btn-outline-dark rounded-5 fw-semibold px-2 py-1"><small>Branding</small></button>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6">
+                <div class="image-overlay img-fluid position-relative overflow-hidden">
+                    <img src="./images/team3.png" alt="">
+                    <div class="social-icons">
+                        <a href="#"><i class="bi bi-instagram"><img src="./icons/Instagram.png" alt=""></i></a>
+                        <a href="#"><i class="bi bi-twitter"><img src="./icons/Twitter.png" alt=""></i></a>
+                        <a href="#"><i class="bi bi-behance"><img src="./icons/Behance.png" alt=""></i></a>
+                    </div>
+                </div>
+                <div class="img-description d-flex align-items-center justify-content-between my-4">
+                    <h1>Chris Watson</h1>
+                    <button
+                        class="btn btn-outline-dark rounded-5 fw-semibold px-2 py-1"><small>Branding</small></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonials -->
+    <div class="testimonials my-6">
+        <div class="row g-4 mb-6">
+            <div class="col-lg-4"></div> <!-- Empty Div -->
+            <div class="col-lg-8 border-bottom pb-6">
+                <div class="d-flex gap-5 justify-content-between align-items-baseline">
+                    <img src="./images/Oliv-logo6.svg" alt="">
+                    <div class="testimonial">
+                        <h1>“We couldn't be happier with the branding strategy developed.”</h1>
+                        <p class="mt-5">We approached Øliv for a complete rebranding of our company and we couldn't be
+                            happier with
+                            the results. Their market research and analysis helped us define our target audience and
+                            unique brand positioning. Their team then created a visually compelling logo and consistent
+                            branding across all touchpoints.</p>
+                        <p class="mt-5">The new brand has helped us stand out in the market and increase sales. We
+                            highly recommend
+                            Øliv to any business looking to rebrand or refresh their brand.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-4"></div> <!-- Empty Div -->
+            <div class="col-lg-8">
+                <div class="d-flex gap-5 justify-content-between align-items-baseline">
+                    <img src="./images/Oliv-logo4.svg" alt="">
+                    <div class="testimonial">
+                        <h1>“Expert Brand Management from Øliv”</h1>
+                        <p class="mt-5">As a growing business, it was important for us to have a strong and consistent
+                            brand. Øliv's brand management services helped us to achieve this. They conducted a thorough
+                            brand audit and provided valuable insights and recommendations.</p>
+                        <p class="mt-5">Their ongoing monitoring and implementation of our brand has helped us maintain
+                            consistency and stay aligned with our business goals. We couldn't be happier with the
+                            results and highly recommend Øliv's brand management services.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="contact my-6">
+        <div class="row g-4 p-5">
+            <div class="col-lg-4 p-5">Contact</div>
+            <div class="col-lg-8">
+                <h1>Let's start building your brand's unique story together.</h1>
+                <p class="fs-5 mt-5">Want to see what a difference a strong brand can make? Request a consultation
+                    today.</p>
+                <button type="button" class="hero-btn btn btn-dark rounded-5 btn-lg-lg px-4 py-3 mt-5">Get In Touch
+                    &nearr;</button>
+            </div>
+        </div>
+    </div>
+
+    <h1 class="fs-6 fw-light border-bottom pb-4 mt-5">BLOG</h1>
+
+    <!-- Blog / Insights -->
+    <div class="blog my-6">
+        <div class="blog-head d-flex align-items-center justify-content-between">
+            <h1>Insights on Branding</h1>
+            <button class="btn btn-outline-dark rounded-5 py-2 px-4">See All</button>
+        </div>
+
+        <div class="row g-5 mt-4">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="image-overlay img-fluid">
+                    <img src="./images/blog1.png" alt="">
+                </div>
+                <div class="img-description d-flex flex-column align-items-start justify-content-between mt-3">
+                    <h1>The Importance of a Strong Brand Positioning</h1>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="image-overlay img-fluid">
+                    <img src="./images/blog2.png" alt="">
+                </div>
+                <div class="img-description d-flex flex-column align-items-start justify-content-between mt-3">
+                    <h1>Creating a Consistent Brand Identity Across All Touchpoints</h1>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="image-overlay img-fluid">
+                    <img src="./images/blog3.png" alt="">
+                </div>
+                <div class="img-description d-flex flex-column align-items-start justify-content-between mt-3">
+                    <h1>The Role of Market Research in Branding Strategy</h1>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="image-overlay img-fluid">
+                    <img src="./images/blog4.png" alt="">
+                </div>
+                <div class="img-description d-flex flex-column align-items-start justify-content-between mt-3">
+                    <h1>The Impact of Social Media on Branding</h1>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container-fluid">
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-4 border-bottom pb-5 py-5 my-5">
+            <div class="col mb-3">
+                <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+                    <img src="./images/Logo.svg" alt="">
+                </a>
+                <div class="footer-social-icons">
+                    <a href="#"><i class="bi bi-instagram"><img src="./icons/Instagram-dk.png" alt=""></i></a>
+                    <a href="#"><i class="bi bi-twitter"><img src="./icons/Twitter-dk.png" alt=""></i></a>
+                    <a href="#"><i class="bi bi-behance"><img src="./icons/Behance-dk.png" alt=""></i></a>
+                </div>
+            </div>
+            <div class="col mb-3">
+                <h5 class="border-bottom pb-4">Pages</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Home</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Services</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Abour</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Jobs</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Contact</a></li>
+                </ul>
+                <button type="button" class="hero-btn btn btn-dark rounded-5 btn-lg-lg px-3 py-2">More
+                    Templates</button>
+            </div>
+            <div class="col mb-3">
+                <h5 class="border-bottom pb-4">CMS</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Work</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Work Single</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Blog</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Blog Single</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Shop</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Shop Single</a></li>
+                </ul>
+            </div>
+            <div class="col mb-3">
+                <h5 class="border-bottom pb-4">Utility Pages</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">404 Error Page</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Password Protected</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Styleguide</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Licencing</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Changelog</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Credits -->
+    <div class="credits d-flex justify-content-between align-items-center">
+        <div class="credits-left d-flex gap-2">
+            <p>&copy; Originally Created by: <a href="" style="text-decoration: underline; color: black;">Pawel Gola</a>
+            </p>
+            <p>Replicated by: <a href="https://github.com/ManasPancholi8802"
+                    style="text-decoration: underline; color: black;">Manas Pancholi</a></p>
+            <p>- Powered by <a href="" style="text-decoration: underline; color: black;">Webflow</a></p>
+        </div>
+        <div class="credits-right d-flex gap-4 text-muted text-decoration-none">
+            <a href="#">Privacy</a>
+            <a href="#">Imprint</a>
+        </div>
+    </div>
+
+    <!-- Bootstrap Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
