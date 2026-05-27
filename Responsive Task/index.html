@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Two Leaves and a Bud | Organic Tea</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ANNOUNCEMENT BAR -->
+    <div class="announcement">
+        Free US shipping for orders over $75
+    </div>
+
+    <!-- HEADER -->
+    <header>
+        <div class="header-inner">
+            <nav class="header-left">
+                <a href="#" class="nav-link">Shop</a>
+                <a href="#" class="nav-link">Learn</a>
+                <a href="#" class="nav-link">Reviews</a>
+            </nav>
+
+            <a href="#" style="display:flex;align-items:center;justify-content:center;">
+                <img src="./images/Twoleaves_logo.svg" alt="Two Leaves and a Bud" class="logo-img"
+                    style="background:transparent;min-width:150px;min-height:50px;" />
+            </a>
+
+            <div class="header-right">
+                <a href="#" class="nav-link">My Account</a>
+                <a href="#" class="nav-link">Cafe & Wholesale</a>
+                <a href="#" class="nav-link">Tea Journal</a>
+                <div class="nav-cart-icon flex">
+                    <div class="cart_icon">
+
+                        <svg width="22" height="31" viewBox="0 0 22 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M21.5 10V24.5C21.5 27.5376 19.0376 30 16 30H6C2.96243 30 0.5 27.5376 0.5 24.5V10H21.5Z"
+                                stroke="#201C1A"></path>
+                            <path d="M5 9.5V6.5C5 3.18629 7.68629 0.5 11 0.5C14.3137 0.5 17 3.18629 17 6.5V9.5"
+                                stroke="#201C1A"></path>
+                        </svg>
+
+                    </div>
+                    <div class="cart_number">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <img src="./images/hero-bg2.png" alt="Hero background" class="hero-img" style="background:#c8d4c0;" />
+        <div class="hero-content text-white flex-col leading-0">
+            <h1>A cup that fits the moment.</h1>
+            <p>From compostable whole leaf tea sachets and iced tea to tea lattes and
+                matcha, we've got something for everyone.</p>
+            <a href="#" class="btn-primary rounded-4xl py-5! px-15! text-lg!">Shop Now</a>
+        </div>
+        <div class="scroll-hint">
+            <img src="" alt="Scroll down" style="width:28px;height:28px;background:#2a285730;border-radius:50%;" />
+        </div>
+    </section>
+
+    <!-- TAGLINE BAND -->
+    <section class="tagline-band">
+        <h2>A <em>great</em> cup starts with a careful pluck — the top two leaves and a bud.</h2>
+    </section>
+
+    <!-- BEST SELLERS -->
+    <section>
+        <div style="padding:60px 60px 0;">
+            <p class="section-label">Best sellers</p>
+        </div>
+        <div class="carousel gap-6 w-full py-4">
+
+            <!-- CARD 1 -->
+            <div class="carousel-item">
+                <div class="product-card w-80 bg-white rounded-2xl p-4">
+
+                    <div class="product-img-wrap rounded-xl p-6" style="background-color: #c1ee91;">
+                        <img src="./images/organic_tropical_green_tea.png" alt="Organic Tropical Green Tea"
+                            class="w-full object-contain" />
+                    </div>
+
+                    <p class="product-tag text-sm mt-4 text-gray-500">
+                        Tea Sachets
+                    </p>
+
+                    <h3 class="product-name text-xl font-semibold mt-1">
+                        Organic Tropical Green Tea
+                    </h3>
+
+                    <div class="product-stars mt-2">
+                        ★★★★★
+                        <span class="text-sm text-gray-500">(84)</span>
+                    </div>
+
+                    <p class="product-desc text-gray-600 mt-2">
+                        A fruity and fun take on a classic green tea.
+                    </p>
+
+                    <p class="product-price text-lg font-semibold mt-3">
+                        From $11.95
+                    </p>
+
+                    <button class="btn btn-primary w-full mt-4">
+                        Add to Cart
+                    </button>
+
+                </div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="carousel-item">
+                <div class="product-card w-80 bg-white rounded-2xl p-4">
+
+                    <div class="product-img-wrap rounded-xl p-6" style="background-color: #f5d6d6;">
+                        <img src="./images/bundle-herbal-tea-trio.png" alt="Tea" class="w-full object-contain" />
+                    </div>
+
+                    <p class="product-tag text-sm mt-4 text-gray-500">
+                        Herbal Tea
+                    </p>
+
+                    <h3 class="product-name text-xl font-semibold mt-1">
+                        Calm Herbal Trio
+                    </h3>
+
+                    <div class="product-stars mt-2">
+                        ★★★★★
+                        <span class="text-sm text-gray-500">(62)</span>
+                    </div>
+
+                    <p class="product-desc text-gray-600 mt-2">
+                        Relaxing herbs with soothing floral notes.
+                    </p>
+
+                    <p class="product-price text-lg font-semibold mt-3">
+                        From $13.95
+                    </p>
+
+                    <button class="btn btn-primary w-full mt-4">
+                        Add to Cart
+                    </button>
+
+                </div>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="carousel-item">
+                <div class="product-card w-80 bg-white rounded-2xl p-4">
+
+                    <div class="product-img-wrap rounded-xl p-6" style="background-color: #f6efc7;">
+                        <img src="./images/peppermint_naked.png" alt="Tea" class="w-full object-contain" />
+                    </div>
+
+                    <p class="product-tag text-sm mt-4 text-gray-500">
+                        Black Tea
+                    </p>
+
+                    <h3 class="product-name text-xl font-semibold mt-1">
+                        Organic Peppermint - 50 Naked Tea Sachets
+                    </h3>
+
+                    <div class="product-stars mt-2">
+                        ★★★★★
+                        <span class="text-sm text-gray-500">(101)</span>
+                    </div>
+
+                    <p class="product-desc text-gray-600 mt-2">
+                        Strong and energizing morning blend.
+                    </p>
+
+                    <p class="product-price text-lg font-semibold mt-3">
+                        From $14.95
+                    </p>
+
+                    <button class="btn btn-primary w-full mt-4">
+                        Add to Cart
+                    </button>
+
+                </div>
+            </div>
+
+            <!-- CARD 4 -->
+            <div class="carousel-item">
+                <div class="product-card w-80 bg-white rounded-2xl p-4">
+
+                    <div class="product-img-wrap rounded-xl p-6" style="background-color: #c1ee91;">
+                        <img src="./images/Bamboo_Tea_Chest.png" alt="Organic Tropical Green Tea"
+                            class="w-full object-contain" />
+                    </div>
+
+                    <p class="product-tag text-sm mt-4 text-gray-500">
+                        Tea Sachets
+                    </p>
+
+                    <h3 class="product-name text-xl font-semibold mt-1">
+                        Classic Bamboo Tea Chest
+                    </h3>
+
+                    <div class="product-stars mt-2">
+                        ★★★★★
+                        <span class="text-sm text-gray-500">(84)</span>
+                    </div>
+
+                    <p class="product-desc text-gray-600 mt-2">
+                        A fruity and fun take on a classic green tea.
+                    </p>
+
+                    <p class="product-price text-lg font-semibold mt-3">
+                        From $11.95
+                    </p>
+
+                    <button class="btn btn-primary w-full mt-4">
+                        Add to Cart
+                    </button>
+
+                </div>
+            </div>
+
+            <!-- CARD 5 -->
+            <div class="carousel-item">
+                <div class="product-card w-80 bg-white rounded-2xl p-4">
+
+                    <div class="product-img-wrap rounded-xl p-6" style="background-color: #f5d6d6;">
+                        <img src="./images/Matcha.avif" alt="Tea" class="w-full object-contain" />
+                    </div>
+
+                    <p class="product-tag text-sm mt-4 text-gray-500">
+                        Herbal Tea
+                    </p>
+
+                    <h3 class="product-name text-xl font-semibold mt-1">
+                        Nice Matcha Tea Latte Mix
+                    </h3>
+
+                    <div class="product-stars mt-2">
+                        ★★★★★
+                        <span class="text-sm text-gray-500">(62)</span>
+                    </div>
+
+                    <p class="product-desc text-gray-600 mt-2">
+                        Relaxing herbs with soothing floral notes.
+                    </p>
+
+                    <p class="product-price text-lg font-semibold mt-3">
+                        From $13.95
+                    </p>
+
+                    <button class="btn btn-primary w-full mt-4">
+                        Add to Cart
+                    </button>
+
+                </div>
+            </div>
+
+            <!-- CARD 6 -->
+            <div class="carousel-item">
+                <div class="product-card w-80 bg-white rounded-2xl p-4">
+
+                    <div class="product-img-wrap rounded-xl p-6" style="background-color: #f6efc7;">
+                        <img src="./images/Latte-mix.png" alt="Tea" class="w-full object-contain" />
+                    </div>
+
+                    <p class="product-tag text-sm mt-4 text-gray-500">
+                        Black Tea
+                    </p>
+
+                    <h3 class="product-name text-xl font-semibold mt-1">
+                        Nice Chai Tea Latte Mix
+                    </h3>
+
+                    <div class="product-stars mt-2">
+                        ★★★★★
+                        <span class="text-sm text-gray-500">(101)</span>
+                    </div>
+
+                    <p class="product-desc text-gray-600 mt-2">
+                        Strong and energizing morning blend.
+                    </p>
+
+                    <p class="product-price text-lg font-semibold mt-3">
+                        From $14.95
+                    </p>
+
+                    <button class="btn btn-primary w-full mt-4">
+                        Add to Cart
+                    </button>
+
+                </div>
+            </div>
+
+            <!-- CARD 7 -->
+            <div class="carousel-item">
+                <div class="product-card w-80 bg-white rounded-2xl p-4">
+
+                    <div class="product-img-wrap rounded-xl p-6" style="background-color: #c1ee91;">
+                        <img src="./images/organic-high-mountain.png" alt="Organic Tropical Green Tea"
+                            class="w-full object-contain" />
+                    </div>
+
+                    <p class="product-tag text-sm mt-4 text-gray-500">
+                        Tea Sachets
+                    </p>
+
+                    <h3 class="product-name text-xl font-semibold mt-1">
+                        Organic Mountain High Chai Tea
+                    </h3>
+
+                    <div class="product-stars mt-2">
+                        ★★★★★
+                        <span class="text-sm text-gray-500">(84)</span>
+                    </div>
+
+                    <p class="product-desc text-gray-600 mt-2">
+                        A fruity and fun take on a classic green tea.
+                    </p>
+
+                    <p class="product-price text-lg font-semibold mt-3">
+                        From $11.95
+                    </p>
+
+                    <button class="btn btn-primary w-full mt-4">
+                        Add to Cart
+                    </button>
+
+                </div>
+            </div>
+
+            <!-- CARD 8 -->
+            <div class="carousel-item">
+                <div class="product-card w-80 bg-white rounded-2xl p-4">
+
+                    <div class="product-img-wrap rounded-xl p-6" style="background-color: #f5d6d6;">
+                        <img src="./images/earl-grey.png" alt="Tea" class="w-full object-contain" />
+                    </div>
+
+                    <p class="product-tag text-sm mt-4 text-gray-500">
+                        Herbal Tea
+                    </p>
+
+                    <h3 class="product-name text-xl font-semibold mt-1">
+                        Organic Earl Grey - 50 Naked Tea Sachets
+                    </h3>
+
+                    <div class="product-stars mt-2">
+                        ★★★★★
+                        <span class="text-sm text-gray-500">(62)</span>
+                    </div>
+
+                    <p class="product-desc text-gray-600 mt-2">
+                        Relaxing herbs with soothing floral notes.
+                    </p>
+
+                    <p class="product-price text-lg font-semibold mt-3">
+                        From $13.95
+                    </p>
+
+                    <button class="btn btn-primary w-full mt-4">
+                        Add to Cart
+                    </button>
+
+                </div>
+            </div>
+
+            <!-- CARD 9 -->
+            <div class="carousel-item">
+                <div class="product-card w-80 bg-white rounded-2xl p-4">
+
+                    <div class="product-img-wrap rounded-xl p-6" style="background-color: #f6efc7;">
+                        <img src="./images/alpine_berry.png" alt="Tea" class="w-full object-contain" />
+                    </div>
+
+                    <p class="product-tag text-sm mt-4 text-gray-500">
+                        Black Tea
+                    </p>
+
+                    <h3 class="product-name text-xl font-semibold mt-1">
+                        Alpine Berry - 15 Naked Tea Sachets
+                    </h3>
+
+                    <div class="product-stars mt-2">
+                        ★★★★★
+                        <span class="text-sm text-gray-500">(101)</span>
+                    </div>
+
+                    <p class="product-desc text-gray-600 mt-2">
+                        Strong and energizing morning blend.
+                    </p>
+
+                    <p class="product-price text-lg font-semibold mt-3">
+                        From $14.95
+                    </p>
+
+                    <button class="btn btn-primary w-full mt-4">
+                        Add to Cart
+                    </button>
+
+                </div>
+            </div>
+
+        </div> 
+        <a href="#" class="explore-link">Explore All Teas →</a>
+    </section>
+
+    <!-- DISCOVER / VIBE FINDER -->
+    <section class="discover-section">
+        <p class="section-label" style="color:rgba(255,255,255,0.5);">Discover</p>
+        <h2>Let's find a cup that fits the <em>moment</em>.<br>What are you searching for?</h2>
+        <input type="text">
+        <p class="sub uppercase mt-8!">Or explore by vibe...</p>
+        <div class="vibe-tags">
+            <button class="vibe-tag">A Sweet Treat</button>
+            <button class="vibe-tag">Evening Unwind</button>
+            <button class="vibe-tag">Focused & Clear</button>
+            <button class="vibe-tag">Caffeine!</button>
+            <button class="vibe-tag">Caffeine-Free</button>
+            <button class="vibe-tag">Ceremony-Worthy</button>
+            <button class="vibe-tag">Whole Leaf</button>
+            <button class="vibe-tag">Over Ice</button>
+            <button class="vibe-tag">Lattes</button>
+            <button class="vibe-tag">Black Tea</button>
+            <button class="vibe-tag">Green Tea</button>
+            <button class="vibe-tag">Herbal Tea</button>
+            <button class="vibe-tag">Organic</button>
+            <button class="vibe-tag">Barista Favorite</button>
+            <button class="vibe-tag">Calm & Cozy</button>
+            <button class="vibe-tag">Fruit Forward</button>
+        </div>
+    </section>
+
+    <!-- ORIGINS -->
+    <section class="origins-section">
+        <div class="origins-text">
+            <p class="section-label">Our origins</p>
+            <h2>born in colorado</h2>
+            <br />
+            <p>Our founder, Richard, started Two Leaves and a Bud in pursuit of a truly great cup. Two decades later,
+                that same care and curiosity guide everything we make.</p>
+            <div class="origins-pillars">
+                <div class="pillar">
+                    <div class="pillar-icon">
+                        <img src="" alt="Quality" style="width:28px;height:28px;background:#c8c0b0;" />
+                    </div>
+                    <span class="pillar-text">Quality, Without Pretense</span>
+                </div>
+                <div class="pillar">
+                    <div class="pillar-icon">
+                        <img src="" alt="Care" style="width:28px;height:28px;background:#c8c0b0;" />
+                    </div>
+                    <span class="pillar-text">Care for People & Planet</span>
+                </div>
+                <div class="pillar">
+                    <div class="pillar-icon">
+                        <img src="" alt="Sourcing" style="width:28px;height:28px;background:#c8c0b0;" />
+                    </div>
+                    <span class="pillar-text">Transparent Sourcing</span>
+                </div>
+            </div>
+            <a href="#" class="btn-outline" style="width:fit-content;">Our Story</a>
+        </div>
+        <div class="origins-img">
+            <img src="" alt="Aerial view of a dense forest"
+                style="background:#8aaa88;width:100%;height:100%;min-height:480px;" />
+        </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="reviews-section">
+        <div class="reviews-header">
+            <p class="section-label">Reviews</p>
+            <h2>Loved by tea people <em>everywhere</em>.<br>Here's what they're saying.</h2>
+        </div>
+        <div class="reviews-grid">
+            <div class="review-card">
+                <div class="review-stars">★★★★★</div>
+                <p class="review-quote">"The right amount of spice."</p>
+                <div class="review-meta">
+                    <div class="review-thumb"><img src="" alt="" style="background:#c8d4c0;" /></div>
+                    <div>
+                        <div class="reviewer-name">Angelina R.</div>
+                        <div class="review-product">Organic Mountain High Chai</div>
+                    </div>
+                </div>
+                <a href="#" class="review-shop">Shop</a>
+            </div>
+            <div class="review-card">
+                <div class="review-stars">★★★★★</div>
+                <p class="review-quote">"Incredibly refreshing, especially over ice. Light, crisp, and instantly
+                    cooling."</p>
+                <div class="review-meta">
+                    <div class="review-thumb"><img src="" alt="" style="background:#c8d4c0;" /></div>
+                    <div>
+                        <div class="reviewer-name">Jacob K.</div>
+                        <div class="review-product">Organic Matcha Mint</div>
+                    </div>
+                </div>
+                <a href="#" class="review-shop">Shop</a>
+            </div>
+            <div class="review-card">
+                <div class="review-stars">★★★★★</div>
+                <p class="review-quote">"Clean energy, rich flavor, and all the good stuff your body loves. Literally
+                    liquid GOLD."</p>
+                <div class="review-meta">
+                    <div class="review-thumb"><img src="" alt="" style="background:#c8d4c0;" /></div>
+                    <div>
+                        <div class="reviewer-name">Harrison G.</div>
+                        <div class="review-product">Two Roots Golden Latte Mix</div>
+                    </div>
+                </div>
+                <a href="#" class="review-shop">Shop</a>
+            </div>
+            <div class="review-card">
+                <div class="review-stars">★★★★★</div>
+                <p class="review-quote">"Soo tasty and energizing."</p>
+                <div class="review-meta">
+                    <div class="review-thumb"><img src="" alt="" style="background:#c8d4c0;" /></div>
+                    <div>
+                        <div class="reviewer-name">Gracie M.</div>
+                        <div class="review-product">Organic Tropical Green Tea</div>
+                    </div>
+                </div>
+                <a href="#" class="review-shop">Shop</a>
+            </div>
+            <div class="review-card">
+                <div class="review-stars">★★★★★</div>
+                <p class="review-quote">"The perfect start to my day."</p>
+                <div class="review-meta">
+                    <div class="review-thumb"><img src="" alt="" style="background:#c8d4c0;" /></div>
+                    <div>
+                        <div class="reviewer-name">Jorge F.</div>
+                        <div class="review-product">Jasmine Petal</div>
+                    </div>
+                </div>
+                <a href="#" class="review-shop">Shop</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHOLESALE BANNER -->
+    <section class="wholesale-banner">
+        <div class="wholesale-text">
+            <p class="section-label" style="color:rgba(255,255,255,0.6);">Our Cafe & Wholesale Partners</p>
+            <h2>From local cafés to national chains.</h2>
+            <p>Our teas power thousands of baristas every day.</p>
+            <a href="#" class="btn-white">Learn More</a>
+        </div>
+        <div class="wholesale-img">
+            <img src="" alt="Barista holding a matcha latte"
+                style="background:#5a7d5e;width:100%;height:100%;min-height:380px;" />
+        </div>
+    </section>
+
+    <!-- LATTES -->
+    <section class="lattes-section">
+        <div class="lattes-header">
+            <p class="section-label">Our Lattes</p>
+            <h2>Barista Blends for Every Mood</h2>
+            <p class="sub">(No training required)</p>
+        </div>
+        <div class="lattes-scroll">
+            <div class="latte-card">
+                <p class="latte-sub">Nice</p>
+                <h3 class="latte-name">Chai<br>Latte Mix</h3>
+                <div class="latte-img-wrap">
+                    <img src="" alt="Nice Chai Latte Mix" style="background:#d4b896;" />
+                </div>
+                <p class="latte-desc">Not too sweet, not too spicy — a powdered latte mix meant for making tea lattes
+                    simple.</p>
+                <a href="#" class="btn-outline" style="font-size:0.75rem;padding:10px 20px;width:fit-content;">Shop
+                    Now</a>
+            </div>
+            <div class="latte-card">
+                <p class="latte-sub">Nice</p>
+                <h3 class="latte-name">Matcha<br>Latte Mix</h3>
+                <div class="latte-img-wrap">
+                    <img src="" alt="Nice Matcha Latte Mix" style="background:#a8c090;" />
+                </div>
+                <p class="latte-desc">A mix of finely ground green tea and just enough sweetness to blend into delicious
+                    matcha lattes or smoothies.</p>
+                <a href="#" class="btn-outline" style="font-size:0.75rem;padding:10px 20px;width:fit-content;">Shop
+                    Now</a>
+            </div>
+            <div class="latte-card">
+                <p class="latte-sub">Two Roots</p>
+                <h3 class="latte-name">Golden<br>Latte</h3>
+                <div class="latte-img-wrap">
+                    <img src="" alt="Two Roots Golden Latte" style="background:#d4a850;" />
+                </div>
+                <p class="latte-desc">Naturally caffeine-free blend of spice and sweetness. Only 6 grams of sugar per
+                    serving.</p>
+                <a href="#" class="btn-outline" style="font-size:0.75rem;padding:10px 20px;width:fit-content;">Shop
+                    Now</a>
+            </div>
+            <div class="latte-card">
+                <p class="latte-sub">Barista</p>
+                <h3 class="latte-name">Chai<br>Latte Mix</h3>
+                <div class="latte-img-wrap">
+                    <img src="" alt="Barista Chai Latte Mix" style="background:#b88c70;" />
+                </div>
+                <p class="latte-desc">Real spices blend with cane sugar and Indian and African black teas for an
+                    indulgent, spicy sipping experience.</p>
+                <a href="#" class="btn-outline" style="font-size:0.75rem;padding:10px 20px;width:fit-content;">Shop
+                    Now</a>
+            </div>
+            <div class="latte-card">
+                <p class="latte-sub">Barista</p>
+                <h3 class="latte-name">Matcha<br>Latte Mix</h3>
+                <div class="latte-img-wrap">
+                    <img src="" alt="Barista Matcha Latte Mix" style="background:#7a9e60;" />
+                </div>
+                <p class="latte-desc">Pure Japanese matcha blends with cane sugar to make for a rich and satisfying
+                    sipping experience.</p>
+                <a href="#" class="btn-outline" style="font-size:0.75rem;padding:10px 20px;width:fit-content;">Shop
+                    Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- JOURNAL -->
+    <section class="journal-section">
+        <div class="journal-header">
+            <div>
+                <p class="section-label">Journal</p>
+                <h2>A community steeped in <em>curiosity</em>. Explore recipes, culture, and everyday tea wisdom.</h2>
+            </div>
+            <a href="#" class="btn-outline" style="flex-shrink:0;">Explore The Tea Journal</a>
+        </div>
+        <div class="journal-grid">
+            <div class="journal-card">
+                <div class="journal-card-img">
+                    <img src="" alt="London Fog Earl Grey Latte" style="background:#c8b8d0;" />
+                </div>
+                <h4 class="journal-card-title">London Fog Earl Grey Latte</h4>
+            </div>
+            <div class="journal-card">
+                <div class="journal-card-img">
+                    <img src="" alt="Nice Matcha drinks to delight!" style="background:#a8c890;" />
+                </div>
+                <h4 class="journal-card-title">Nice Matcha drinks to delight!</h4>
+            </div>
+            <div class="journal-card">
+                <div class="journal-card-img">
+                    <img src="" alt="Nice Iced Matcha Latte" style="background:#b8d4b0;" />
+                </div>
+                <h4 class="journal-card-title">"Nice" Iced Matcha Latte</h4>
+            </div>
+            <div class="journal-card">
+                <div class="journal-card-img">
+                    <img src="" alt="Matcha Energy Balls" style="background:#a0b888;" />
+                </div>
+                <h4 class="journal-card-title">Matcha Energy Balls</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- CLOSING CTA -->
+    <section class="closing-cta">
+        <h2>Great Tea.<br>In Good Company.</h2>
+        <p>Discover the people, places, and purpose behind every blend.</p>
+        <a href="#" class="btn-white">About Us</a>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <div class="newsletter-section">
+        <h3>Steep with us</h3>
+        <p>Get news stories, brewing tips, and special offers straight to your inbox.</p>
+        <div class="newsletter-form">
+            <input type="email" placeholder="Your email address" />
+            <button type="button">Subscribe</button>
+        </div>
+        <div style="display:flex;gap:24px;justify-content:center;margin-top:32px;">
+            <a href="#"
+                style="font-size:0.75rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--mid-gray);text-decoration:none;">Facebook</a>
+            <a href="#"
+                style="font-size:0.75rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--mid-gray);text-decoration:none;">Instagram</a>
+            <a href="#"
+                style="font-size:0.75rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--mid-gray);text-decoration:none;">LinkedIn</a>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-inner">
+            <div>
+                <div class="footer-logo">
+                    <img src="" alt="Two Leaves and a Bud" style="height:32px;min-width:120px;background:#e0dbd0;" />
+                </div>
+                <p class="footer-desc">An independent tea company founded in 2004 in the mountains of Colorado. A cup
+                    you can feel good about.</p>
+                <div class="footer-social">
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">LinkedIn</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Shop</h4>
+                <ul>
+                    <li><a href="#">Whole Leaf Tea Sachets</a></li>
+                    <li><a href="#">Pure Matcha</a></li>
+                    <li><a href="#">Tea Lattes</a></li>
+                    <li><a href="#">Iced Tea</a></li>
+                    <li><a href="#">Gifts & Samplers</a></li>
+                    <li><a href="#">Shop All</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Learn</h4>
+                <ul>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Our Spirit</a></li>
+                    <li><a href="#">Tea Journal</a></li>
+                    <li><a href="#">Reviews</a></li>
+                    <li><a href="#">Rewards</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Partners</h4>
+                <ul>
+                    <li><a href="#">Cafe & Wholesale</a></li>
+                    <li><a href="#">Wholesale Login</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© Two Leaves and a Bud 2026</span>
+            <a href="#">Site by Manufactur</a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
