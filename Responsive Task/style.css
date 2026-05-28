@@ -56,16 +56,57 @@ h3,
 }
 
 .nav-link {
-    font-size: 0.8rem;
+    font-size: 1.25rem;
+    font-family: 'Reckless';
     letter-spacing: 0.05em;
-    text-transform: uppercase;
     font-weight: 500;
     color: var(--dark);
     text-decoration: none;
+    position: relative;
 }
 
-.nav-link:hover {
-    opacity: 0.6;
+.header-right .nav-link{
+    font-family: RobotoMono;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.nav-ani::after{
+    content: "";
+    width: 0%;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transition: all ease 0.3s;
+}
+
+.nav-ani:hover::after {
+    width: 100%;
+}
+
+.nav-link-icon::after{
+    content: "";
+    background-image: url('./icons/down-arrow.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20px;
+    height: 20px;
+    background-color: #c1e4f8;
+    border: 1px solid black;
+    border-radius: 100%;
+    position: absolute;
+    top: 20%;
+    margin-left: 6px;
+}
+.nav-link-icon:hover::after{
+    rotate: -180deg;
+    background-color: #ffb500;
+    transition: all ease 0.3s;
 }
 
 /* ── ANNOUNCEMENT BAR ── */
@@ -91,7 +132,7 @@ h3,
 
 /* ── HEADER ── */
 .header {
-    background: white;
+    background: #fffefb;
     border: 1px solid black;
     border-radius: 10px;
     position: relative;
@@ -457,7 +498,54 @@ h3,
     font-style: italic;
 }
 
-.discover-section input
+/* Discover Section Input Animation */
+.input-wrapper {
+  position: relative;
+  width: 300px;
+}
+
+.input-wrapper input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+}
+
+.input-wrapper::before {
+  content: "Black Tea";
+  font-size: 2rem;
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  
+  color: gray;
+  pointer-events: none;
+  overflow: hidden;
+  white-space: nowrap;
+
+  width: 0;
+  animation: typing 3s steps(18) infinite;
+}
+
+.input-wrapper:focus-within::before,
+.input-wrapper input:not(:placeholder-shown)::before {
+  display: none;
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+
+  50% {
+    width: 18ch;
+  }
+
+  100% {
+    width: 0;
+  }
+}
+
 
 .discover-section .sub {
     font-size: 0.9rem;
