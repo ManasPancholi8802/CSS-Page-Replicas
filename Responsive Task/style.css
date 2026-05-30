@@ -580,50 +580,65 @@ h3,
 .origins-section {
     display: flex;
     flex-direction: column;
-    min-height: 520px;
+    align-items: center;
+    min-height: 180vh;
+    position: relative;
+    background-image: url(./images/forest.png);
+}
+
+.kettle-anime{
+    position: absolute;
+    right: 10%;
+    top: -3%;
 }
 
 .origins-text {
-    background: var(--cream);
     padding: 80px 60px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .origins-text h2 {
-    font-size: clamp(1.6rem, 2.5vw, 2.2rem);
+    font-family: Midnight-mid;
+    font-size: clamp(10rem, 2.5vw, 2.2rem);
+    text-align: center;
+    max-width: 500px;
     line-height: 1.2;
     margin-bottom: 8px;
-    text-transform: lowercase;
+    text-transform: uppercase;
     letter-spacing: -0.01em;
 }
 
 .origins-text p {
-    font-size: 0.95rem;
+    margin-top: 5rem;
+    font-family: Reckless;
+    text-align: center;
+    font-size: 3.25rem;
     line-height: 1.7;
-    color: #444;
     margin-bottom: 40px;
-    max-width: 420px;
+    max-width: 75%;
 }
 
 .origins-pillars {
+    margin-top: 5rem;
     display: flex;
-    flex-direction: column;
-    gap: 20px;
+    gap: 50px;
     margin-bottom: 40px;
 }
 
 .pillar {
     display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 16px;
 }
 
 .pillar-icon {
-    width: 40px;
-    height: 40px;
-    background: var(--light-border);
+    width: 6rem;
+    height: 6rem;
+    background: transparent;
     flex-shrink: 0;
     display: flex;
     align-items: center;
@@ -631,51 +646,37 @@ h3,
 }
 
 .pillar-icon img {
-    width: 28px;
+    width: 6rem;
 }
 
 .pillar-text {
-    font-size: 0.88rem;
+    font-size: 1.25rem;
     font-weight: 500;
-}
-
-.origins-img {
-    position: relative;
-    overflow: hidden;
-}
-
-.origins-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    text-align: center;
+    max-width: 180px;
 }
 
 /* ── REVIEWS ── */
-.reviews-section {
-    padding: 100px 60px;
-    background: var(--warm-white);
-}
-
 .reviews-header {
-    text-align: center;
+    text-align: left;
     margin-bottom: 60px;
 }
 
 .reviews-header h2 {
-    font-size: clamp(1.8rem, 3vw, 2.6rem);
+    font-size: clamp(2.25rem, 3vw, 3rem);
     line-height: 1.3;
+    font-family: Reckless;
 }
 
 .reviews-header h2 em {
     font-style: italic;
-    color: var(--sage);
+    font-family: Reckless;
 }
 
 .reviews-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 1px;
-    background: var(--light-border);
+    gap: 18px;
 }
 
 @media (max-width: 1000px) {
@@ -685,74 +686,62 @@ h3,
 }
 
 .review-card {
-    background: var(--warm-white);
-    padding: 32px 24px;
-}
-
-.review-stars {
-    color: var(--sage);
-    font-size: 0.9rem;
-    margin-bottom: 16px;
+    min-height: 420px;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .review-quote {
     font-family: 'Playfair Display', serif;
     font-style: italic;
-    font-size: 1rem;
-    line-height: 1.5;
+    font-size: 1.75rem;
     color: var(--dark);
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+}
+
+.reviewer-name {
+    font-size: 0.82rem;
+    font-weight: 500;
+    color: #505050;
 }
 
 .review-meta {
     display: flex;
     align-items: center;
     gap: 12px;
-    margin-bottom: 12px;
+    border: 1px solid black;
+    border-radius: 10px;
 }
 
 .review-thumb {
-    width: 36px;
-    height: 36px;
-    background: var(--cream);
-    border-radius: 50%;
+    width: 80px;
+    height: 80px;
     overflow: hidden;
     flex-shrink: 0;
+    border-right: 1px solid black;
 }
 
 .review-thumb img {
-    width: 100%;
-    height: 100%;
+    width: 80px;
     object-fit: cover;
 }
 
-.reviewer-name {
-    font-size: 0.82rem;
-    font-weight: 500;
-}
-
 .review-product {
-    font-size: 0.75rem;
-    color: var(--mid-gray);
-}
-
-.review-shop {
-    font-size: 0.72rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--dark);
-    text-decoration: none;
-    font-weight: 500;
-    border-bottom: 1px solid var(--dark);
-    padding-bottom: 1px;
+    font-size: 1rem;
+    max-width: 100px;
+    line-height: 1;
+    color: white;
 }
 
 /* ── WHOLESALE BANNER ── */
 .wholesale-banner {
-    background: var(--sage);
+    background: #2a2857;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    min-height: 380px;
+    min-height: 100vh;
 }
 
 .wholesale-text {
@@ -761,33 +750,21 @@ h3,
     flex-direction: column;
     justify-content: center;
 }
+.wholesale-text .section-label {
+    font-family: Reckless;
+}
 
 .wholesale-text h2 {
-    font-size: clamp(1.8rem, 3vw, 2.8rem);
+    font-size: clamp(0.5rem, 1.25vw, 2.8rem);
     color: white;
-    line-height: 1.2;
     margin-bottom: 20px;
+    max-width: 600px;
 }
 
 .wholesale-text p {
-    font-size: 0.95rem;
+    font-size: 5rem;
     color: rgba(255, 255, 255, 0.85);
-    line-height: 1.6;
     margin-bottom: 32px;
-    max-width: 380px;
-}
-
-.btn-white {
-    display: inline-block;
-    background: white;
-    color: var(--dark);
-    padding: 14px 36px;
-    font-size: 0.82rem;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    font-weight: 500;
-    text-decoration: none;
-    width: fit-content;
 }
 
 .wholesale-img {
@@ -803,7 +780,7 @@ h3,
 /* ── LATTES ── */
 .lattes-section {
     padding: 100px 0;
-    background: var(--cream);
+    background: #9f6429;
 }
 
 .lattes-header {
@@ -973,7 +950,7 @@ h3,
 
 /* ── NEWSLETTER ── */
 .newsletter-section {
-    background: var(--cream);
+    background: #c0dbff;
     padding: 80px 60px;
     text-align: center;
     border-top: 1px solid var(--light-border);
@@ -1026,7 +1003,7 @@ h3,
 
 /* ── FOOTER ── */
 footer {
-    background: var(--warm-white);
+    background: #c0dbff;
     border-top: 1px solid var(--light-border);
     padding: 60px;
 }
@@ -1118,7 +1095,11 @@ footer {
 .footer-bottom a:hover {
     color: var(--dark);
 }
-/* 
-section {
-    border-bottom: 1px solid var(--light-border);
-} */
+
+.footer-background-image{
+    background-color: #c0dbff;
+    background-image: url('./images/footer-extended_1.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
