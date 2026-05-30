@@ -814,72 +814,53 @@ h3,
 /* ── JOURNAL ── */
 .journal-section {
     padding: 100px 60px;
-    background: var(--warm-white);
 }
 
 .journal-header {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+    flex-direction: column;
+    align-items: start;
     margin-bottom: 60px;
 }
 
 .journal-header h2 {
-    font-size: clamp(1.6rem, 2.5vw, 2.4rem);
+    font-size: clamp(2rem, 3vw, 3rem);
     line-height: 1.2;
-    max-width: 420px;
+    max-width: 1000px;
 }
 
 .journal-header h2 em {
     font-style: italic;
-    color: var(--sage);
 }
 
-.journal-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 24px;
-}
+/* Modified after original product-card in best seller section */
 
-@media (max-width: 900px) {
-    .journal-grid {
-        grid-template-columns: repeat(2, 1fr);
+.product-card-cstm{
+    .product-img-wrap img{
+        transition: transform 0.3s ease-in-out;
     }
 }
 
-.journal-card {
-    cursor: pointer;
+.product-card-cstm:hover{
+    .product-img-wrap img{
+        transform: scale(1.2) !important;
+    }
+    .product-img-wrap .product-tag{
+        rotate: -3deg;
+    }
 }
 
-.journal-card:hover .journal-card-img {
-    opacity: 0.85;
-}
-
-.journal-card-img {
-    aspect-ratio: 4/3;
-    background: var(--cream);
-    margin-bottom: 16px;
-    overflow: hidden;
-}
-
-.journal-card-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.journal-card-title {
-    font-family: 'Playfair Display', serif;
-    font-size: 1rem;
-    line-height: 1.4;
-    color: var(--dark);
+.product-wrap-btm .product-name{
+    font-family: RobotoMono;
 }
 
 /* ── CLOSING CTA ── */
 .closing-cta {
-    background: var(--navy);
+    background-image: url('./images/closing\ cta-about\ us1111.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 120px 60px;
-    text-align: center;
+    min-height: 90vh;
 }
 
 .closing-cta h2 {
@@ -890,8 +871,7 @@ h3,
 }
 
 .closing-cta p {
-    font-size: 1rem;
-    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.25rem;
     margin-bottom: 40px;
 }
 
@@ -899,7 +879,7 @@ h3,
 .newsletter-section {
     background: #c0dbff;
     padding: 80px 60px;
-    text-align: center;
+    text-align: start;
     border-top: 1px solid var(--light-border);
 }
 
