@@ -519,7 +519,8 @@
     <section class="reviews-section px-50!">
 
         <div class="reviews-header ml-80!">
-            <div class="origins-tag p-1! mt-25! mb-12!" style="background-color: #73bc25;width: max-content; rotate: -3deg; border: 1px solid black; border-radius: 10px;">
+            <div class="origins-tag p-1! mt-25! mb-12!"
+                style="background-color: #73bc25;width: max-content; rotate: -3deg; border: 1px solid black; border-radius: 10px;">
                 <p class="section-label m-0!">Reviews</p>
             </div>
             <h2>Loved by tea people <em>everywhere</em>.<br>Here's what they're saying.</h2>
@@ -534,7 +535,7 @@
                 </div>
                 <div class="review-meta" style="background-color: #ea6d44;">
                     <div class="review-thumb">
-                        <img src="./images/organic-high-mountain.png" alt=""/>
+                        <img src="./images/organic-high-mountain.png" alt="" />
                     </div>
                     <div class="product-review-details flex gap-2 p-1! items-center">
                         <div class="review-product">Organic Mountain High Chai</div>
@@ -545,12 +546,14 @@
 
             <div class="review-card p-3!" style="background-color: #abdf74;">
                 <div class="reviewer-details mt-10! flex-col justify-center items-center text-center">
-                    <p class="review-quote text-2xl!">“This drink is incredibly refreshing, especially when served over ice. It’s light, crisp, and instantly cooling, making it perfect for a quick refresh any time of day. ”</p>
+                    <p class="review-quote text-2xl!">“This drink is incredibly refreshing, especially when served over
+                        ice. It’s light, crisp, and instantly cooling, making it perfect for a quick refresh any time of
+                        day. ”</p>
                     <p class="reviewer-name">Jacob K.</p>
                 </div>
                 <div class="review-meta" style="background-color: #73bc25;">
                     <div class="review-thumb">
-                        <img src="./images/Matcha.avif" alt=""/>
+                        <img src="./images/Matcha.avif" alt="" />
                     </div>
                     <div class="product-review-details flex gap-2 p-1! items-center">
                         <div class="review-product text-black!">Organic Matcha Mint</div>
@@ -561,12 +564,13 @@
 
             <div class="review-card p-3!" style="background-color: #ffd265;">
                 <div class="reviewer-details mt-10! flex-col justify-center items-center text-center">
-                    <p class="review-quote text-2xl!">"One sip and you can feel the difference—clean energy, rich flavor, and all the good stuff your body loves. Literally liquid GOLD."</p>
+                    <p class="review-quote text-2xl!">"One sip and you can feel the difference—clean energy, rich
+                        flavor, and all the good stuff your body loves. Literally liquid GOLD."</p>
                     <p class="reviewer-name">Harrison G.</p>
                 </div>
                 <div class="review-meta" style="background-color: #ffb500;">
                     <div class="review-thumb">
-                        <img src="./images/golden-latte.png" alt=""/>
+                        <img src="./images/golden-latte.png" alt="" />
                     </div>
                     <div class="product-review-details flex gap-2 p-1! items-center">
                         <div class="review-product text-black!">Two Roots Golden Latte Mix</div>
@@ -582,7 +586,7 @@
                 </div>
                 <div class="review-meta" style="background-color: #8bc045;">
                     <div class="review-thumb">
-                        <img src="./images/organic_tropical_green_tea.png" alt=""/>
+                        <img src="./images/organic_tropical_green_tea.png" alt="" />
                     </div>
                     <div class="product-review-details flex gap-2 p-1! items-center">
                         <div class="review-product text-black!">Organic Tropical Green Tea</div>
@@ -598,7 +602,7 @@
                 </div>
                 <div class="review-meta" style="background-color: #c790db;">
                     <div class="review-thumb">
-                        <img src="./images/jasmine-tea.png" alt=""/>
+                        <img src="./images/jasmine-tea.png" alt="" />
                     </div>
                     <div class="product-review-details flex gap-2 p-1! items-center">
                         <div class="review-product">Jasmine Petal</div>
@@ -624,44 +628,151 @@
     </section>
 
     <!-- LATTES -->
-    <section class="lattes-section relative">
+    <section class="lattes-section flex flex-col relative p-0.5">
         <div class="kettle-anime w-40">
             <img src="./images/latte-anime.svg" alt="">
         </div>
         <div class="lattes-header flex flex-col justify-center items-center">
-            <div class="origins-tag p-1! mb-12!" style="background-color: #ffcb96;width: max-content; rotate: -3deg; border: 1px solid black; border-radius: 10px;">
+            <div class="origins-tag p-1! mb-12!"
+                style="background-color: #ffcb96;width: max-content; rotate: -3deg; border: 1px solid black; border-radius: 10px;">
                 <p class="section-label m-0!">Our Lattes</p>
             </div>
             <h2>Barista Blends for Every Mood</h2>
             <p class="sub">(No training required)</p>
         </div>
-        
-        <div class="lattes-scroll">
 
-            <div class="latte-card">
-                <p class="latte-sub">Nice</p>
-                <h3 class="latte-name">Chai<br>Latte Mix</h3>
-                <div class="latte-img-wrap">
-                    <img src="" alt="Nice Chai Latte Mix" style="background:#d4b896;" />
+        <!-- Carousel -->
+        <div class="carousel carousel-cstm self-center mt-auto!">
+            <div id="slide1" class="carousel-item carousel-cstm-item relative w-full rounded-3xl" style="background-color: #ffcb96;">
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-30 items-center w-full">
+                    <div class="flex justify-end">
+                        <img src="./images/Chai-latte-w-glass.avif" alt="">
+                    </div>
+
+                    <div class="hidden lg:flex flex-col items-start">
+                        <div class="origins-tag p-1! mb-4!"
+                            style="background-color: #f09f54;width: max-content; rotate: -3deg; border: 1px solid black; border-radius: 10px;">
+                            <p class="section-label m-0!">Nice</p>
+                        </div>
+                        <h2
+                            style="font-size: 5rem; font-weight: 200; max-width: 350px; line-height: 1; margin-bottom: 1rem;">
+                            Chai Latte Mix</h2>
+                        <p class="text-lg" style="max-width: 400px;">Our Nice Chai is a not too sweet, not too spicy,
+                            powdered latte mix meant for making tea lattes simple.</p>
+                        <button class="btn btn-primary-rev rounded-4xl! px-12! py-6! text-base font-light mt-8!">Shop
+                            Now</button>
+                    </div>
                 </div>
-                <p class="latte-desc">Not too sweet, not too spicy — a powdered latte mix meant for making tea lattes
-                    simple.</p>
-                <a href="#" class="btn-outline" style="font-size:0.75rem;padding:10px 20px;width:fit-content;">Shop
-                    Now</a>
+
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide4" class="btn btn-circle border-black w-15 h-15">❮</a>
+                    <a href="#slide2" class="btn btn-circle border-black w-15 h-15">❯</a>
+                </div>
             </div>
 
-            <div class="latte-card">
-                <p class="latte-sub">Nice</p>
-                <h3 class="latte-name">Matcha<br>Latte Mix</h3>
-                <div class="latte-img-wrap">
-                    <img src="" alt="Nice Matcha Latte Mix" style="background:#a8c090;" />
+            <div id="slide2" class="carousel-item carousel-cstm-item w-full relative rounded-3xl" style="background-color: #c0e571;">
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-30 items-center w-full">
+                    <div class="flex justify-end">
+                        <img src="./images/Matcha-latte-w-glass.avif" alt="">
+                    </div>
+
+                    <div class="hidden lg:flex flex-col items-start">
+                        <div class="origins-tag p-1! mb-4!"
+                            style="background-color: #87c00d;width: max-content; rotate: -3deg; border: 1px solid black; border-radius: 10px;">
+                            <p class="section-label m-0!">Nice</p>
+                        </div>
+                        <h2
+                            style="font-size: 5rem; font-weight: 200; max-width: 350px; line-height: 1; margin-bottom: 1rem;">
+                            Matcha Latte Mix</h2>
+                        <p class="text-lg" style="max-width: 400px;">A mix of finely ground green tea and just enough sweetness to blend into delicious matcha lattes or smoothies</p>
+                        <button class="btn btn-primary-rev rounded-4xl! px-12! py-6! text-base font-light mt-8!">Shop
+                            Now</button>
+                    </div>
                 </div>
-                <p class="latte-desc">A mix of finely ground green tea and just enough sweetness to blend into delicious
-                    matcha lattes or smoothies.</p>
-                <a href="#" class="btn-outline" style="font-size:0.75rem;padding:10px 20px;width:fit-content;">Shop
-                    Now</a>
+
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide1" class="btn btn-circle border-black w-15 h-15">❮</a>
+                    <a href="#slide3" class="btn btn-circle border-black w-15 h-15">❯</a>
+                </div>
             </div>
 
+            <div id="slide3" class="carousel-item carousel-cstm-item w-full relative rounded-3xl" style="background-color: #ffd265;">
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-30 items-center w-full">
+                    <div class="flex justify-end">
+                        <img src="./images/goldeen-latte-w-glass.avif" alt="">
+                    </div>
+
+                    <div class="hidden lg:flex flex-col items-start">
+                        <div class="origins-tag p-1! mb-4!"
+                            style="background-color: #ffb500;width: max-content; rotate: -3deg; border: 1px solid black; border-radius: 10px;">
+                            <p class="section-label m-0!">Two Roots</p>
+                        </div>
+                        <h2 style="font-size: 5rem; font-weight: 200; max-width: 350px; line-height: 1; margin-bottom: 1rem;">
+                            Golden Latte</h2>
+                        <p class="text-lg" style="max-width: 400px;">Naturally caffeine-free blend of spice and sweetness for making golden lattes simple. Only 6 grams of sugar per serving makes this spicy and sweet treat totally satisfying.</p>
+                        <button class="btn btn-primary-rev rounded-4xl! px-12! py-6! text-base font-light mt-8!">Shop
+                            Now</button>
+                    </div>
+                </div>
+
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide2" class="btn btn-circle border-black w-15 h-15">❮</a>
+                    <a href="#slide4" class="btn btn-circle border-black w-15 h-15">❯</a>
+                </div>
+            </div>
+
+            <div id="slide4" class="carousel-item carousel-cstm-item w-full relative rounded-3xl" style="background-color: #ffdab3;">
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-30 items-center w-full">
+                    <div class="flex justify-end">
+                        <img src="./images/Barista_Chai-w-glass.webp" alt="">
+                    </div>
+
+                    <div class="hidden lg:flex flex-col items-start">
+                        <div class="origins-tag p-1! mb-4!" style="background-color: #e8aa63;width: max-content; rotate: -3deg; border: 1px solid black; border-radius: 10px;">
+                            <p class="section-label m-0!">Barista</p>
+                        </div>
+                        <h2 style="font-size: 5rem; font-weight: 200; max-width: 350px; line-height: 1; margin-bottom: 1rem;">
+                            Chai Latte Mix</h2>
+                        <p class="text-lg" style="max-width: 400px;">Real spices blend with cane sugar and Indian and African black teas to make for an indulgent and spicy sipping experience.</p>
+                        <button class="btn btn-primary-rev rounded-4xl! px-12! py-6! text-base font-light mt-8!">Shop
+                            Now</button>
+                    </div>
+                </div>
+
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide3" class="btn btn-circle border-black w-15 h-15">❮</a>
+                    <a href="#slide5" class="btn btn-circle border-black w-15 h-15">❯</a>
+                </div>
+            </div>
+
+            <div id="slide5" class="carousel-item carousel-cstm-item w-full relative rounded-3xl" style="background-color: #abed78;">
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-30 items-center w-full">
+                    <div class="flex justify-end">
+                        <img src="./images/Barista_Matcha-w-glass" alt="">
+                    </div>
+
+                    <div class="hidden lg:flex flex-col items-start">
+                        <div class="origins-tag p-1! mb-4!" style="background-color: #6ac337;width: max-content; rotate: -3deg; border: 1px solid black; border-radius: 10px;">
+                            <p class="section-label m-0!">Barista</p>
+                        </div>
+                        <h2 style="font-size: 5rem; font-weight: 200; max-width: 350px; line-height: 1; margin-bottom: 1rem;">
+                            Matcha Latte Mix</h2>
+                        <p class="text-lg" style="max-width: 400px;">Our Barista Matcha will satisfy those who will like to enjoy a sweet treat. Pure Japanese matcha blends with cane sugar to make for a rich and satisfying sipping experience.</p>
+                        <button class="btn btn-primary-rev rounded-4xl! px-12! py-6! text-base font-light mt-8!">Shop
+                            Now</button>
+                    </div>
+                </div>
+
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide4" class="btn btn-circle border-black w-15 h-15">❮</a>
+                    <a href="#slide1" class="btn btn-circle border-black w-15 h-15">❯</a>
+                </div>
+            </div>
         </div>
     </section>
 

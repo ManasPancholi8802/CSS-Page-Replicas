@@ -781,88 +781,35 @@ h3,
 .lattes-section {
     padding: 100px 0;
     background: #9f6429;
+    min-height: 90vh;
 }
 
 .lattes-header {
     padding: 0 60px;
     margin-bottom: 60px;
+
 }
 
 .lattes-header h2 {
-    font-size: clamp(1.8rem, 3vw, 2.6rem);
+    font-size: clamp(5rem, 4vw, 3.5rem);
+    color: white;
+    text-transform: uppercase;
+    font-family: Midnight-mid;
     line-height: 1.2;
     margin-bottom: 8px;
 }
 
 .lattes-header .sub {
-    font-size: 0.9rem;
-    color: var(--mid-gray);
-}
-
-.lattes-scroll {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 1px;
-    background: var(--light-border);
-    margin: 0;
-}
-
-@media (max-width: 900px) {
-    .lattes-scroll {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-.latte-card {
-    background: var(--cream);
-    padding: 40px 28px 32px;
-    display: flex;
-    flex-direction: column;
-}
-
-.latte-card:hover {
-    background: #ede8dc;
-}
-
-.latte-sub {
-    font-size: 0.7rem;
-    letter-spacing: 0.12em;
+    font-size: 1rem;
     text-transform: uppercase;
-    color: var(--mid-gray);
-    margin-bottom: 4px;
+    color: white;
 }
 
-.latte-name {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.3rem;
-    line-height: 1.2;
-    margin-bottom: 16px;
-    color: var(--dark);
+.carousel-cstm{
+    width: 97% !important;
 }
 
-.latte-img-wrap {
-    aspect-ratio: 1;
-    background: white;
-    margin-bottom: 20px;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-.latte-img-wrap img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.latte-desc {
-    font-size: 0.82rem;
-    color: #555;
-    line-height: 1.6;
-    margin-bottom: 24px;
-    flex: 1;
-}
 
 /* ── JOURNAL ── */
 .journal-section {
